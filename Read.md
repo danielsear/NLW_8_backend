@@ -1,3 +1,6 @@
+Figma do projeto >
+https://www.figma.com/file/8b3OYK8jZtPbhZl22fXd9Q/Feedback-Widget-(Community)?node-id=100%3A3925
+
 > npm i typescript @types/node ts-node-dev -D
 
 > npx tsc --init
