@@ -4,8 +4,8 @@ const createFeedbackSpy = jest.fn() //função espiã
 const sendMailSpy = jest.fn()
 
 const submitFeedback = new SubmitFeedbackUseCase(
-  { create: async () => {} },
-  { sendMail: async () => {} }
+  { create: createFeedbackSpy },
+  { sendMail: sendMailSpy }
 )
 
 describe('Submit feedback', () => {
@@ -17,6 +17,9 @@ describe('Submit feedback', () => {
         screenshot: 'data:image/png;base64, daniel'
       })
     ).resolves.not.toThrow() //espero que dê tudo certo e retorne nenhum error
+
+    expect(createFeedbackSpy).toHaveBeenCalled() //espero que a função createFeedbackSpy seja chamada
+    expect(sendMailSpy).toHaveBeenCalled()
   })
 
   it('should not be able to submit a feedback without type', async () => {
