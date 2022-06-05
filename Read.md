@@ -57,3 +57,9 @@ pra rodar
 para conferir qual linhas do código não estão sendo utilizadas basta entrar nas pastas
 
 > converage>Icov-report>submit-feedback-use-case.ts(botão esquerdo no arquivo> open with live server)
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+Mostrar quais endereços de frontend podem acessar nossa aplicação
+
+> npm i cors
+> npm i @types/cors -D
