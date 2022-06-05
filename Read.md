@@ -68,3 +68,8 @@ Mostrar quais endereços de frontend podem acessar nossa aplicação
 
 > npm i cors
 > npm i @types/cors -D
+
+/////////////////////////
+
+> npx tsc
+> npm run start
