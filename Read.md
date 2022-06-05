@@ -41,3 +41,19 @@ Principios SOLID
 5 *uma forma de inverter as dependências de uma classe
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Testes unitários da aplicação // pag> https://swc.rs/docs/usage/jest
+
+> npm i jest -D
+> npx jest --init
+> npm i ts-node -D
+> npm i -D jest @swc/core @swc/jest
+> npm i @types/jest -D
+
+pra rodar
+
+> npm run test
+
+para conferir qual linhas do código não estão sendo utilizadas basta entrar nas pastas
+
+> converage>Icov-report>submit-feedback-use-case.ts(botão esquerdo no arquivo> open with live server)
